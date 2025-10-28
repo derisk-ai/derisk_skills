@@ -1,2 +1,5 @@
-# derisk_skills
-Community-Powered Risk Mitigation Skills for OpenDerisk &amp; n8n
+# Derisk_Skills
+Community-Powered AIOps Skills for OpenDerisk &amp; n8n
+
+
+# Quick Start
