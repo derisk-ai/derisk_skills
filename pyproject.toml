@@ -1,23 +1,30 @@
 [project]
 name = "derisk-skills"
 version = "0.1.0"
-description = "DeRisk Skill CLI Module - Setup tool for OpenDerisk"
+description = "CLI tool for managing OpenDeRisk Skills"
 readme = "README.md"
-license = {file = "LICENSE"}
-authors = [{name = "csunny", email = "cfqsunny@gmail.com"}]
+authors = [{name = "csunny", email = "csunny@gmail.com"}]
+
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+    "Operating System :: OS Independent"
 ]
 requires-python = ">=3.10"
 dependencies = [
-    "click>=8.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0"
 ]
 
-[build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
+
+[tool.uv.build-backend]
+module-name = "derisk_skills"
+source-exclude = ["tests/**/*"]
 
 [project.scripts]
-derisk-cli = "derisk_skills.cli.__init__:main"
+derisk-skills = "derisk_skills.cli:main"

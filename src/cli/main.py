@@ -4,8 +4,6 @@
     Usage: derisk-cli [OPTIONS] COMMAND [ARGS]...
 """
 
-import os
-import sys
 import typer
 from typer.core import TyperGroup
 from rich.console import Console
@@ -13,11 +11,7 @@ from rich.text import Text
 from rich.align import Align
 from typer.core import TyperGroup
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from skills import SKILLS
-
-print(SKILLS)
+from ..skills import SKILLS
 
 BANNER = """
 
@@ -42,7 +36,7 @@ class BannerGroup(TyperGroup):
         super().format_help(ctx, formatter)
         
 app = typer.Typer(
-    name="derisk-skills",
+    name="derisk-cli",
     help="CLI tool for managing OpenDerisk Skills",
     add_completion=False,
     invoke_without_command=True,
