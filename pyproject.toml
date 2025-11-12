@@ -1,5 +1,5 @@
 [project]
-name = "derisk-skills"
+name = "derisk-cli"
 version = "0.1.0"
 description = "CLI tool for managing OpenDeRisk Skills"
 readme = "README.md"
@@ -23,7 +23,7 @@ publish-url = "https://test.pypi.org/legacy/"
 explicit = true
 
 [tool.uv.build-backend]
-module-name = "derisk_skills"
+module-name = "derisk_cli"
 source-exclude = ["tests/**/*"]
 
 [project.scripts]
