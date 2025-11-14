@@ -44,7 +44,7 @@ Derisk-skills is published as a Python package on PyPI. we highly recommend inst
 ### Installation
 Once uv is installed, you can install derisk-skills with:
 
-> uv tool install derisk-cli
+> uv tool install derisk-skills
 
 ### Usage
 Run derisk-cli command in the directory you want to work on, `derisk-cli --help` 
@@ -53,9 +53,7 @@ Run derisk-cli command in the directory you want to work on, `derisk-cli --help`
   <img src="./assets/derisk-cli.jpg" width="100%" />
 </p>
 
-
-
-### Skills(技能)
+### Skills
 
 We use Skills to organize the resources needed by the Agent. The resources included in Skills are as follows:
 

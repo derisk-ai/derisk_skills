@@ -1,5 +1,5 @@
 [project]
-name = "derisk-cli"
+name = "derisk-skills"
 version = "0.1.0"
 description = "CLI tool for managing OpenDeRisk Skills"
 readme = "README.md"
